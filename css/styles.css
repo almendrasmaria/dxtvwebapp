@@ -1,0 +1,153 @@
+body { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom, #89ace1, #7ea6e2, #74a1e2, #689be3, #5c95e3, #5492e4, #4c90e5, #438de6, #3d8de8, #358deb, #2d8eed, #218ef0)!important;
+}
+
+.img-left {
+    width: 50%;
+    background: url('../images/dxtv-image.png') center ;
+    background-size: cover;
+}
+  
+.card {
+    height: 500px;
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+}
+  
+.card-body {
+    padding: 2rem;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.title {
+    margin-bottom: 2rem;
+}
+  
+.form-box {
+    align-items: center;
+    justify-content: center;
+}
+  
+.form-input {
+    position: relative;
+}
+  
+.form-input input {
+    width: 100%;
+    height: 45px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+}
+  
+.form-input span {
+    position: absolute;
+    top: 10px;
+    padding-left: 15px;
+    color: #007bff;
+}
+  
+.form-input input::placeholder {
+    color: black;
+    padding-left: 0px;
+}
+  
+.form-input input:focus::placeholder {
+    color: #454b69;
+}
+  
+.form-box button[type="submit"] {
+    border-radius: 20px;
+    width: 300px;
+}
+
+.container-table {
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 100%;
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+.table-redondeada table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px; /* Ajusta el valor según el grado de redondeo deseado */
+    overflow: hidden;
+}
+
+.table-redondeada th, .table-redondeada td {
+    border: 1px solid #ccc; /* Agrega bordes a las celdas si lo deseas */
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.custom-table{
+    text-align: center;
+}
+.custom-row {
+    justify-content: center;
+    align-items: center; 
+    padding: 30px
+}
+.table-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.table-responsive {
+    max-height: 500px; 
+    overflow-y: auto; 
+}
+
+table.table tr td,
+table.table tr th {
+    vertical-align: middle;
+}
+
+a.btn.btn-outline-primary[href="create.php"] {
+    border-radius: 20px; 
+    width: 150px;
+}
+
+.btn.btn-outline-success.btn-download {
+    border-radius: 20px; 
+    width: 150px;
+    margin: 0px 0px 0px 10px;
+}
+
+a.btn.btn-outline-primary.logout-button[href="controller/controller_logout.php"] {
+    border-radius: 20px;
+    width: 150px;
+    border-radius: 20px; 
+    color: white;
+    border-color: white; 
+}
+
+.alert {
+    text-align: center;
+    margin-top: 18px;
+
+  }
+  
