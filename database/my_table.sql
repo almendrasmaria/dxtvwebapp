@@ -1,5 +1,10 @@
-use db;
+-- Crear una nueva base de datos llamada 'dxtvdb'
+CREATE DATABASE dxtvdb;
 
+-- Seleccionar la base de datos 'dxtvdb' para realizar operaciones en ella
+USE dxtvdb;
+
+-- Crear una tabla llamada 'my_table' con algunas columnas
 CREATE TABLE my_table(
   id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
   view VARCHAR(50),

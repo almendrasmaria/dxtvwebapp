@@ -1,4 +1,8 @@
-body { 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -6,13 +10,15 @@ body {
     justify-content: center;
     background: linear-gradient(to right bottom, #89ace1, #7ea6e2, #74a1e2, #689be3, #5c95e3, #5492e4, #4c90e5, #438de6, #3d8de8, #358deb, #2d8eed, #218ef0)!important;
 }
-
+  
+/* Estilos de la imagen izquierda */
 .img-left {
     width: 50%;
     background: url('../images/dxtv-image.png') center ;
     background-size: cover;
 }
   
+/* Estilos de la tarjeta */
 .card {
     height: 500px;
     overflow: hidden;
@@ -21,6 +27,7 @@ body {
     box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
 }
   
+/* Estilos del cuerpo de la tarjeta */
 .card-body {
     padding: 2rem;
     height: 500px;
@@ -30,15 +37,24 @@ body {
     align-items: center;
 }
   
+/* Estilos del título */
 .title {
     margin-bottom: 2rem;
 }
-  
+
+/* Estilos del botón de envío del formulario */
+.btn-outline-primary.login-button {
+    border-radius: 20px !important;
+    width: 300px !important;
+}
+
+/* Estilos de la caja del formulario */
 .form-box {
     align-items: center;
     justify-content: center;
 }
   
+/* Estilos de la entrada de formulario */
 .form-input {
     position: relative;
 }
@@ -56,6 +72,7 @@ body {
     background: transparent;
 }
   
+/* Estilos del ícono en la entrada de formulario */
 .form-input span {
     position: absolute;
     top: 10px;
@@ -63,20 +80,18 @@ body {
     color: #007bff;
 }
   
+/* Estilos del marcador de posición en la entrada de formulario */
 .form-input input::placeholder {
     color: black;
     padding-left: 0px;
 }
   
+/* Estilos del marcador de posición en la entrada de formulario cuando se enfoca */
 .form-input input:focus::placeholder {
     color: #454b69;
 }
   
-.form-box button[type="submit"] {
-    border-radius: 20px;
-    width: 300px;
-}
-
+/*  Estilos de la tabla de hashtags */
 .container-table {
     max-width: 1000px;
     margin: 0 auto;
@@ -102,7 +117,7 @@ body {
 .table th {
     background-color: #f2f2f2;
 }
-
+/* Tabla de Hashtags*/
 .custom-table{
     text-align: center;
 }
@@ -126,25 +141,27 @@ table.table tr th {
     vertical-align: middle;
 }
 
-a.btn.btn-outline-primary[href="create.php"] {
+/* Boton de "Crear Nuevo" */
+a.btn.btn-primary[href="create.php"] {
     border-radius: 20px; 
-    width: 150px;
+    width: 120px;
 }
 
-.btn.btn-outline-success.btn-download {
+/* Boton descarga CVS */
+.btn.btn-success.btn-download {
     border-radius: 20px; 
-    width: 150px;
+    width: 120px;
     margin: 0px 0px 0px 10px;
 }
 
-a.btn.btn-outline-primary.logout-button[href="controller/controller_logout.php"] {
+/* Boton de "Salir" */
+a.btn.btn-danger.logout-button[href="controller/controller_logout.php"] {
     border-radius: 20px;
-    width: 150px;
-    border-radius: 20px; 
-    color: white;
-    border-color: white; 
+    width: 90px;
+    margin: 0px 0px 16px 10px;
 }
 
+/* Estilos de la Alerta del Login*/
 .alert {
     text-align: center;
     margin-top: 18px;
